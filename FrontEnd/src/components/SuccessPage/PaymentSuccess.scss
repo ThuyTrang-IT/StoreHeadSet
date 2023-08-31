@@ -1,0 +1,56 @@
+/* PaymentSuccess.scss */
+.payment-success-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .payment-success-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #e6e7ec, #f79090);
+    opacity: 0.8;
+    z-index: -1;
+  }
+  
+  .payment-success-content {
+    //background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    //border-radius: 10px;
+    //box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .payment-success-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-success-info {
+    margin-top: 20px;
+  }
+  
+  .payment-result-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .buyer-name,
+  .product-name {
+    font-size: 20px;
+    margin: 10px 0;
+    color: black;
+  }
+  

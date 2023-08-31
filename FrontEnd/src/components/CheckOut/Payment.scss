@@ -1,0 +1,115 @@
+/* Payment.scss */
+
+/* ... (các phần CSS khác) */
+
+.form-group__controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  h2{
+    font-weight: bolder;
+  }
+  
+   .form-group__label_Personal {
+    font-weight: bold;
+  } 
+  
+  .layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .layout__item {
+    flex: 1;
+    min-width: 0; /* Allow wrapping for smaller screens */
+  }
+  
+  /* Phần Card */
+  #form-card_details.field-pan {
+    //background: url('path_to_card_icon.png') no-repeat right center;
+    padding-right: 40px; /* Make room for the card icon */
+  }
+  
+  /* Phần Expiry */
+  #form-card_details.field-expiry_mm,
+  #form-card_details.field-expiry_yy {
+    width: 40px;
+  }
+  
+  /* Phần CVC */
+  #form-card_details.field-cvc {
+    //background: url('path_to_cvc_icon.png') no-repeat right center;
+    padding-right: 40px; /* Make room for the CVC icon */
+  }
+  
+  .cvc-info__image {
+    max-width: 100%;
+  }
+  
+  /* ... (các phần CSS khác) */
+  /* Payment.scss */
+
+/* ... (các phần CSS khác) */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+  
+  .btn--positive {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    display: inline-flex;
+    padding: 10px;
+    width: 200px;
+    height: 60px;
+  }
+  
+  .btn--hollow {
+    background-color: transparent;
+    border: 2px solid #4caf50;
+    color: #4caf50;
+  }
+  
+  .btn--positive:hover,
+  .btn--hollow:hover {
+    background-color: #45a049;
+    color: white;
+    
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .btn--hollow:hover {
+    background-color: #4caf50;
+    color: rgb(172, 166, 166);
+  }
+  
+  /* ... (các phần CSS khác) */
+  

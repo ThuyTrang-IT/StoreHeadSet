@@ -1,0 +1,182 @@
+/* ProductSingleAction.css */
+.product-single-action {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    -webkit-text-size-adjust: 100%;
+    color: #333e48;
+    font: normal normal 14px 'inter', sans-serif;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    box-sizing: border-box !important;
+    margin-bottom: 24px; /* Added margin-bottom */
+    padding: 36px 24px;
+    border: 2px solid #dddddd;
+    border-radius: 20px;
+    width: 400px;
+    height: 100%;
+    margin-right: 0;
+    
+  }
+  .product-single-price{
+    display: block;
+    border-collapse: separate;
+    border-spacing: 0px;
+    font-weight: bolder;
+    font-size: 40px;
+    color: #388eeb;
+    padding: 30px;
+
+  }
+  .button.b_basket {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 108px;
+    height: 40px;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .button.b_basket input.pquantity {
+    font-size: 13px;
+    border: 0;
+    width: 90px;
+    text-align: center;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  /* Styling for the "-" and "+" buttons */
+  .button.b_basket .quantity-btn {
+    font: bold 17px 'courier new', monospace;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  .button.b_basket .decrease-btn {
+    left: 8px;
+  }
+  
+  .button.b_basket .increase-btn {
+    right: 8px;
+  }
+  
+  .button.b_basket .decrease-btn,
+  .button.b_basket .increase-btn {
+    pointer-events: auto; /* Disable pointer events to avoid input interference */
+  }
+  
+  /* Optional: Add a background color on hover for the entire button */
+  .button.b_basket:hover {
+    background-color: #f0f0f0;
+  }
+  /* Styles for the button */
+ button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    --swiper-theme-color: #69e07d;
+    --swiper-navigation-size: 44px;
+    -webkit-text-size-adjust: 100%;
+    border-spacing: 0px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    box-sizing: border-box !important;
+    vertical-align: middle;
+    line-height: inherit;
+    overflow: visible;
+    transition: background-color 0.10s ease-in-out, background-image 0.10s ease-in-out, border 0.10s ease-in-out, box-shadow 0.10s ease-in-out, color 0.10s ease-in-out, text-shadow 0.10s ease-in-out;
+    font-style: normal;
+    font-family: 'inter', sans-serif;
+    border-collapse: separate;
+    margin: 0px;
+    padding: 0px;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: top left;
+    box-shadow: none !important;
+    -webkit-appearance: button;
+    padding-left: 0;
+    padding-right: 0;
+    outline: none !important;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    background-color: #53A93F;
+    border: none !important;
+    border-radius: 20px;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  } 
+  
+  /* Optional: Add hover effect */
+  button:hover {
+    background-color: #439a36;
+  }
+  
+  /* Optional: Add focus effect */
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(83, 169, 63, 0.4);
+  }
+  /* ProductSingleAction.css */
+
+/* Thêm animation vào nút Add to Basket */
+.button-animation {
+  animation: pulse 1s infinite;
+}
+
+/* Định nghĩa keyframes cho animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.button.button.b_basket_button-animation {
+  margin: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #53a93f;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button.b_basket:hover {
+  background-color: #439a36;
+  transform: scale(1.05);
+}
+
+.button-animation {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
