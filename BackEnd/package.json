@@ -13,6 +13,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "prod": "pm2 start 'npm start' --name HeadSetBackend --no-daemon --log-date-format='MM-DD hh:mm:ss.SSS A'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
