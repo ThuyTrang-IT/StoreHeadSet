@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://trangpham.gcalls.vn/api/products', // Đổi baseURL tùy theo backend của bạn
+  baseURL: 'http://localhost:3001/api/products', // Đổi baseURL tùy theo backend của bạn
 });
 
 export const fetchProductData = async () => {
