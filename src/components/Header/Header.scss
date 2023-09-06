@@ -1,0 +1,161 @@
+@import "../../css-config/mixins.scss";
+/* Remove underline from links */
+ul.left li a {
+    text-decoration: none;
+    color: #000; /* Set the color of the links */
+  }
+  
+  /* Style the list items */
+  ul.left li {
+    display: inline-block; /* Display the list items horizontally */
+    margin-left: 20px; /* Add spacing between the list items */
+  }
+  
+  /* Add a hover effect to the links */
+  ul.left li a:hover {
+    color: #ff0000; /* Change the link color on hover */
+    /* Add any additional hover styles here */
+  }
+  
+  /* Optionally, you can also add some styles to the header itself */
+  header {
+    background-color: #f0f0f0; /* Set the background color of the header */
+    padding: 10px 0; /* Add some padding to the header */
+  }
+  
+.main-header {
+  width: 100%;
+  padding: 0 20px;
+  background-color: white;
+  color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  @include md {
+    padding: 0 40px;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    @include md {
+      height: 80px;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    .left {
+      list-style-type: none;
+      display: none;
+      gap: 25px;
+      text-decoration: none;
+      @include md {
+        display: flex;
+      }
+
+      li {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    .center {
+      font-size: 22px;
+      font-weight: 700;
+      cursor: pointer;
+      @include md {
+        font-size: 34px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      @include md {
+        gap: 25px;
+      }
+      svg {
+        font-size: 20px;
+        cursor: pointer;
+        @include md {
+          font-size: 24px;
+          color: #000;
+          
+        }
+      }
+      .cart-icon {
+        position: relative;
+        color: #000;
+
+        span {
+          min-width: 20px;
+          text-align: center;
+          background-color: #8e2de2;
+          position: absolute;
+          padding: 2.5px;
+          right: -12px;
+          top: -5px;
+          font-size: 12px;
+          line-height: 1;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  &.sticky-header {
+    position: sticky;
+    top: 0;
+    transform: translateY(-80px);
+    animation: stickeyHeader 0.3s ease forwards;
+    color: #000;
+  }
+}
+
+@keyframes stickeyHeader {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#dropdown {
+  width: 200px
+}
+#dropdown li{
+  list-style:none;
+  line-height: 30px;
+  background: blue;
+  margin: 2px;
+}
+ 
+#dropdown li a{
+  margin-left: 10px;
+  color: #FFF;
+  text-decoration: none;
+}
+ 
+#dropdown ul{
+  display:none;
+  padding: 0px;
+  background: pink
+}
+ 
+#dropdown ul li{
+  background-color: pink
+}

@@ -1,0 +1,127 @@
+.cart-products-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.ui-dialog-title::before {
+  content: '';
+  display: inline-block; /* Change display to inline-block */
+  margin-right: 12px;
+  width: 48px;
+  height: 48px;
+  background: url("https://www.headset-store.co.uk/templates/rm-headsetstore-2021/img/ui/icon-tick-outline@2x.png") center center no-repeat;
+  background-size: 23px 23px;
+}
+
+.ui-dialog-title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Add this line to vertically center the content */
+  height: 48px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #53a93f;
+  font-size: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
+  cursor: auto;
+  font-family: "inter", sans-serif;
+}
+
+
+.cart-product {
+  display: grid; /* Change from 'flex' to 'grid' */
+  grid-template-columns: 100px 1fr; /* Set width for image and name columns */
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.img-container {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+}
+/* CartItem.scss */
+.cart-product img {
+  max-width: 100px; /* Điều chỉnh kích thước tối đa của hình ảnh */
+  max-height: 100px;
+  border-radius: 4px; /* Bo tròn viền hình ảnh */
+  margin-left: 0px;
+}
+
+.prod-details {
+  flex: 1;
+  /* Remove 'display: flex' and 'flex-direction: column' */
+  /* Use grid layout instead */
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+.name-container {
+  display: flex; 
+  .name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .close-btn {
+    font-size: 25px;
+    color: #555;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 0;
+  
+    &:hover {
+      color: #f00;
+    }
+  }
+  
+}
+
+
+
+
+.quantity-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 18px;
+
+  span {
+    cursor: pointer;
+    padding: 5px;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 10px;
+
+  .highlight {
+    font-weight: bolder;
+    margin-left: 5px;
+    font-size: larger;
+    
+  }
+}
+
+.total-items {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}

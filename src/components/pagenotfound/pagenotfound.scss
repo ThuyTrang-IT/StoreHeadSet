@@ -1,0 +1,11 @@
+.pagenotfound {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f1;
+  > h1 {
+    color: #8e2de2;
+  }
+}
