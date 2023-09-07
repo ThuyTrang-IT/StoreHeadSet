@@ -49,7 +49,7 @@ const SiteHeaderNav = () => {
       label: "Headsets for Phone",
       subItems: [
         { id: "yealink-headsets", label: "Headsets for Yealink Phones", url: "https://www.headset-store.co.uk/yealink-headsets.html" },
-        { id: "poly-handsets", label: "Headset for Poly Handsets", url: "https://www.headset-store.co.uk/polycom-headsets.html" },
+        { id: "poly-headsets", label: "Headset for Poly Headsets", url: "https://www.headset-store.co.uk/polycom-headsets.html" },
         // Add more submenu items as needed
       ],
     },

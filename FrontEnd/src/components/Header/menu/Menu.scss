@@ -28,6 +28,7 @@
 }
 /* Menu.scss */
 
+
 /* Chỉnh sửa nút Home */
 .main-nav li:first-child .nav-link {
   display: initial;
@@ -37,11 +38,13 @@
 
 .main-nav li:first-child .nav-link i {
   font-size: 16px;
+  
 }
 
 .main-nav li:first-child .nav-link span {
   font-size: 14px;
   //margin-left: 5px;
+  
 }
 
 /* Dropdown menu styles */
@@ -50,22 +53,31 @@
   position: absolute;
   top: 100%;
   left: 0;
- // background-color: white;
-  //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+ background-color: rgb(172, 161, 161);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 10px;
   z-index: 1;
   text-align: center; /* Align the dropdown menu items in the center */
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
+/* Thêm viền cho các phần tử con của dropdown menu */
+.dropdown-menu li {
+  border-bottom: 1px solid #ddd; /* Viền dưới cho mỗi liên kết */
+  padding: 5px 0;
+  font-size: 14px;
+  display: block; /* Đảm bảo liên kết chiếm toàn bộ chiều rộng của phần tử cha */
+}
+
+/* Loại bỏ viền dưới cho phần tử cuối cùng */
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
 
 .nav-item:hover .dropdown-menu {
   display: block;
   opacity: 1;
-}
-
-.dropdown-menu li {
-  padding: 5px 0;
+  
 }
 
 .dropdown-menu li a {
@@ -81,20 +93,8 @@
   border-bottom: 1px solid #ddd;
 }
 
-/* Submenu styles */
-.submenu-label {
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 10px;
-}
 
-.submenu-item {
-  color: #ccc;
-}
 
-.submenu-item:hover {
-  color: #fff;
-}
 
 /* Center the dropdown menu */
 .dropdown-menu {

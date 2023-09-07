@@ -52,10 +52,19 @@
 }
 
 .product-loop-item {
+
   justify-content: center;
   padding: 15px;
   text-align: center;
   align-items: center;
+  flex: 0 0 calc(33.33% - 20px);
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  justify-content: center;
 }
 
 .product-image {
