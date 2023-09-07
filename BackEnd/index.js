@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const port = process.env.PORT || 3006;
+const port = process.env.PORT || 3001;
 
 // Sử dụng các middleware
 app.use(cors());
