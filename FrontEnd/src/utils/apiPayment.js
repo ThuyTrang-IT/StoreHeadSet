@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "http://trangpham.gcalls.vn"; // Replace with your backend URL
+const baseURL = "https://trangpham.gcalls.vn"; // Replace with your backend URL
 const api = axios.create({
   baseURL,
 });
