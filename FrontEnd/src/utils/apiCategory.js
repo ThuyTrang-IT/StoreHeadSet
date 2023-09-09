@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://trangpham.gcalls.vn/api/categories', 
+  baseURL: 'https://trangpham.gcalls.vn/api/categories', 
 });
 
 export const fetchCategoryData = async () => {
