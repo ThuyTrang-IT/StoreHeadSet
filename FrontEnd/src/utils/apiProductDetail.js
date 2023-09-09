@@ -1,7 +1,7 @@
 // apiProductDetail.js
 import axios from 'axios';
 
-const backendAPI = 'http://trangpham.gcalls.vn';
+const backendAPI = 'https://trangpham.gcalls.vn';
 
 async function fetchProductDetail() {
   try {
